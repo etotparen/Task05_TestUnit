@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1.25 sec <<< FAILURE! - in TestSuite
+test(ban_home.PenColorTest)  Time elapsed: 0.031 sec  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found [BLUE]
+	at ban_home.PenColorTest.test(PenColorTest.java:17)
+
+test(ban_home.PenWritingTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found []
+	at ban_home.PenWritingTest.test(PenWritingTest.java:17)
+
+test(ban_home.PenWritingTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found []
+	at ban_home.PenWritingTest.test(PenWritingTest.java:17)
+
+test(ban_home.PenWritingTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found []
+	at ban_home.PenWritingTest.test(PenWritingTest.java:17)
+

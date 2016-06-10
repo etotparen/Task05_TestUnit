@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [PenTestSuite]">
+  <parameter name="Word" value="1234567890"/>
+  <parameter name="color" value="GREEN"/>
+  <parameter name="expectedWord" value="123456789"/>
+  <parameter name="inkContainerValue" value="9"/>
+  <parameter name="sizeLetter" value="1.0"/>
+  <test name="Pen Color Test">
+    <parameter name="color" value="GREEN"/>
+    <classes>
+      <class name="ban_home.PenColorTest"/>
+    </classes>
+  </test> <!-- Pen Color Test -->
+  <test name="Writing Test when container is empty">
+    <parameter name="expectedWord" value=""/>
+    <parameter name="inkContainerValue" value="0"/>
+    <classes>
+      <class name="ban_home.PenWritingTest"/>
+    </classes>
+  </test> <!-- Writing Test when container is empty -->
+  <test name="Writing Test when container value is less 0">
+    <parameter name="expectedWord" value=""/>
+    <parameter name="inkContainerValue" value="-10"/>
+    <classes>
+      <class name="ban_home.PenWritingTest"/>
+    </classes>
+  </test> <!-- Writing Test when container value is less 0 -->
+  <test name="Writing Test when container value is not enough">
+    <parameter name="expectedWord" value="123456789"/>
+    <parameter name="inkContainerValue" value="9"/>
+    <classes>
+      <class name="ban_home.PenWritingTest"/>
+    </classes>
+  </test> <!-- Writing Test when container value is not enough -->
+  <test name="Pen Color Test(failed)">
+    <parameter name="color" value="GREEN"/>
+    <classes>
+      <class name="ban_home.PenColorTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- ban_home.PenColorTest -->
+    </classes>
+  </test> <!-- Pen Color Test(failed) -->
+  <test name="Writing Test when container is empty(failed)">
+    <parameter name="expectedWord" value=""/>
+    <parameter name="inkContainerValue" value="0"/>
+    <classes>
+      <class name="ban_home.PenWritingTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- ban_home.PenWritingTest -->
+    </classes>
+  </test> <!-- Writing Test when container is empty(failed) -->
+  <test name="Writing Test when container value is less 0(failed)">
+    <parameter name="expectedWord" value=""/>
+    <parameter name="inkContainerValue" value="-10"/>
+    <classes>
+      <class name="ban_home.PenWritingTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- ban_home.PenWritingTest -->
+    </classes>
+  </test> <!-- Writing Test when container value is less 0(failed) -->
+  <test name="Writing Test when container value is not enough(failed)">
+    <parameter name="expectedWord" value="123456789"/>
+    <parameter name="inkContainerValue" value="9"/>
+    <classes>
+      <class name="ban_home.PenWritingTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- ban_home.PenWritingTest -->
+    </classes>
+  </test> <!-- Writing Test when container value is not enough(failed) -->
+</suite> <!-- Failed suite [PenTestSuite] -->
